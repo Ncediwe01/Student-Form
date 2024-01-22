@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+    <link rel="stylesheet" href="student.CSS">
+</head>
+
+<body>
+
+    <div class="main">
+        <form class="grid-container">
+            <h2 class="dataB">Student Form</h2>
+            <h3 class="personal">[ PERSONAL INFORMATION ]</h3>
+            
+            <label class="F" for="fname">Name/s:</label>
+            <input type="text" id="Fname" placeholder="First name">
+
+            <input type="text" id="middle" placeholder="Middle name">
+
+            <input type="text" id="Surname" placeholder="Surname"><br><br>
+
+
+            <label class="E" for="Email">Email:</label>
+            <input type="email" id="Email" placeholder="abcde@gmail.com"><br><br>
+
+            <label id="D" for="Date of birth">Date of Birth:</label>
+            <input id="DofB" type="text" placeholder="Day">
+
+            <input type="text" id="Month" placeholder="Month">
+
+            <input type="text" id="Year" placeholder="Year"><br><br>
+
+            <label Id="M" for="mobile No">Mobile No:</label>
+            <select id="mobile">
+                <option></option>
+                <option value="+27">+27</option>
+                <option value="+244">+244</option>
+                <option value="+237">+237</option>
+                <option value="+236">236</option>
+                <option value="235">+235</option>
+                <option value="+244">+244</option>
+                <option value="+267">+267</option>
+                <option value="+226">+226</option>
+
+                <input id="digit" type="text" placeholder="10 digit Number"><br><br>
+
+                <label id="a" for="address">Home Address</label>
+                <textarea class="address" id="Address" name="Address" row="50" cols="60"></textarea><br><br>
+
+
+
+                <label id="C" for="City">City:</label>
+                <input type="text" id="City" placeholder="City"><br><br>
+
+                <label id="Co" for="Country">Country:</label>
+                <input id="Country" type="text" id="Country" placeholder="Country"><br><br>
+
+                <label id="Pro" for="Province">Province:</label>
+                <input id="Province" type="text" placeholder="Province"><br><br>
+
+                <label id="Zip" for="Zip Code">Zip Code:</label>
+                <input id="zipcode" type="text" placeholder="Zip Code"><br><br>
+
+                <label id="G" for="Gender">Gender:</label>
+                <select id="gender">
+                    <option></option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Rather don't say">Rather don't</option>
+                </select><br><br>
+
+
+                <fieldset id="status">
+                    <legend id="Em">AGE</legend>
+
+                    <input type="radio" id="Age" name="Age2" value="18-21" onclick="Radio1(this.value)">
+                    <label class="age18" for="Age">18-21</label><br>
+
+                    <input type="radio" id="Age" name="Age2" value="22-25"onclick="Radio1(this.value)">
+                    <label class="age22" for="Age">22-25</label><br>
+
+                    <input type="radio" id="Age" name="Age2" value="26-35"onclick="Radio1(this.value)">
+                    <label class="age26" for="Age">26-35</label><br><br>
+                </fieldset>
+                <br><br>
+
+
+                <fieldset id="status">
+                    <legend id="Em">EMPLOYMENT STATUS</legend><br>
+                    <input type="radio" value="Unemployed" name="Number1" onclick="Radio(this.value)">
+                    <label class="Unemployed">Unemployed</label><br>
+
+                    <input type="radio" value="Employed" name="Number1" onclick="Radio(this.value)">
+                    <label class="Employed">Employed</label><br>
+                </fieldset><br><br>
+
+
+                <!-- TABLE -->
+
+
+                <fieldset id="current">
+                    <legend id="Em">CURRENT / PREVIOUS TERTIARY</legend>
+                    <table id="table">
+
+                        <tr>
+                            <th >From</th>
+                            <th>To</th>
+                            <th>Institution</th>
+                            <th>Faculty</th>
+                            <th> Student Number</th>
+                            <th> Qualification Name</th>
+                            <th>Qualification Complete</th>
+                            
+
+                        </tr>
+                        <tr>
+                            <td><input id="from" type="text"></td>
+                            <td><input id="to" type="text"></td>
+
+                            <td>
+                                <select id="University">
+                                    <option value=""></option>
+                                    <option value="Durban university of Technology">Durban university of Technology
+                                    </option>
+                                    <option value="UNISA">UNISA</option>
+                                    <option value="University of Kwazulu-Natal">University of Kwazulu-Natal</option>
+                                    <option value="University of Johanisburg">University of Johanisburg</option>
+                                    <option value="University of Zululand">University of Zululand</option>
+                                    <option value="University of Cape Town">University of Cape Town</option>
+                                    <option value=">University of Estern Cape">University of Estern Cape</option>
+
+                                </select>
+                            </td>
+                            <td> <select id="Faculty">
+                                    <option value=""></option>
+                                    <option value="Faculty of Accounting and Informatics">Faculty of Accounting and
+                                        Informatics</option>
+                                    <option value="Faculty of Applied Sciences">Faculty of Applied Sciences</option>
+                                    <option value="Faculty of Arts and Design">Faculty of Arts and Design</option>
+                                    <option value="Faculty of Engineering and Built Environment">Faculty of Engineering
+                                        and Built
+                                        Environment
+                                    </option>
+                                    <option value="Faculty of Health Sciences">Faculty of Health Sciences</option>
+                                    <option value="Faculty of Management Sciences">Faculty of Management Sciences
+                                    </option>
+                                </select></td>
+                            <td><input id="studentNo" type="text"></td>
+                            <td><input id="Qualification" type="text"></td>
+
+                            <td>
+                                <input id="Complete1" type="radio" value="YES" name="Complete1" onclick="Radio2(this.value)"><label for="YES">YES</label>
+                                <input id="Complete1" type="radio"value="NO" name="Complete1" onclick="Radio2(this.value)"><label for="NO">NO</label>
+                            </td>
+                        
+
+                        </tr>
+
+                        <tr>
+                            <td><input id="from2" type="text"></td>
+                            <td><input id="to2" type="text"></td>
+                            <td>
+
+                                <select id="University2">
+                                    <option value=""></option>
+                                    <option value="Durban university of Technology">Durban university of Technology
+                                    </option>
+                                    <option value="UNISA">UNISA</option>
+                                    <option value="University of Kwazulu-Natal">University of Kwazulu-Natal</option>
+                                    <option value="University of Johanisburg">University of Johanisburg</option>
+                                    <option value="University of Zululand">University of Zululand</option>
+                                    <option value="University of Cape Town">University of Cape Town</option>
+                                    <option value=">University of Estern Cape">University of Estern Cape</option>
+
+                                </select>
+                            </td>
+                            <td> <select id="Faculty2">
+                                    <option value=""></option>
+                                    <option value="Faculty of Accounting and Informatics">Faculty of Accounting and
+                                        Informatics</option>
+                                    <option value="Faculty of Applied Sciences">Faculty of Applied Sciences</option>
+                                    <option value="Faculty of Arts and Design">Faculty of Arts and Design</option>
+                                    <option value="Faculty of Engineering and Built Environment">Faculty of Engineering
+                                        and Built
+                                        Environment
+                                    </option>
+                                    <option value="Faculty of Health Sciences">Faculty of Health Sciences</option>
+                                    <option value="Faculty of Management Sciences">Faculty of Management Sciences
+                                    </option>
+                                </select></td>
+                            <td><input id="studentNo2" type="text"></td>
+                            <td><input id="Qualification2" type="text"></td>
+                            <td>
+                                <input id="complete2" type="radio" value="YES" name="complite2" onclick="Radio3(this.value)"><label for="YES">YES</label>
+                                <input id="complete2" type="radio"value="NO" name="complite2" onclick="Radio3(this.value)"><label for="NO">NO</label>
+
+                            </td>
+                           
+                        </tr>
+
+
+
+
+
+                    </table>
+                </fieldset>
+                <legend></legend>
+                <button type="button" id="PRESS" onclick="Btn()">SUBMIT</button>
+            </select>
+
+        </form>
+
+
+    </div>
+    <script src="../RES/index.js"></script>
+
+
+
+
+</body>
+
+</html>
